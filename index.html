@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festava Live - Night Live 2023</title>
+   <style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    
+    /* box-sizing: border-box;
+} */
+
+header {
+    background-image: url(../assests/images/nainoa-shizuru-unsplash-blur\ \(1\).jpg);
+    color: white;
+    
+}
+
+.top-bar {
+    background-color:rgb(117, 117, 17);
+
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   }
+.nav-links:hover{
+    color: red;
+}   
+
+.nav-links a {
+    color: rgb(254, 252, 252);
+    text-decoration: none;
+}
+
+.btn-buy-ticket {
+    background-color: #F44336;
+    color: white;
+    height: 5vh;
+    border-radius: 10px;
+    border: #f4f4f4;
+}
+.btn-buy-ticket:hover {
+    background-color: red;
+}
+
+/* Banner */
+.banner {
+    background: url('../assests/images/nainoa-shizuru-unsplash-blur\ \(1\).jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(254, 252, 252);
+    height: 100vh;
+  
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner p {
+    margin: 10px 0;
+}
+
+.event-details {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.btn-learn-more{
+    border-radius: 20px;
+    height: 10vh;
+    width: auto;
+    background-color: #F44336;
+    border: #f4f4f4;
+    color: #f4f4f4;
+}
+.btn-learn-more:hover{
+    background-color: red;
+}
+
+/* About Section */
+.about {
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   }
+
+.about-content{
+    background-image: url(../assests/images/edward-unsplash-blur\ \(1\).jpg);
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    color: #f4f4f4;
+   }
+
+
+.about .highlight {
+    font-weight: bold;
+    color: #FF6F00;
+
+}
+
+/* Artists Section */
+.artists {
+    text-align: center;
+
+}
+
+.artist-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (max-width: 559px) {
+    .artist-gallery{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+}
+
+.artist-card img {
+    width: auto;
+    height: 40vh;
+    object-fit: cover;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/* Schedule Section */
+.schedule {
+    height: 80vh;
+    width:auto;
+    
+    background-color: #222;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.a,.b,.c,.d{
+    background-color: #F44336;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.f{
+    background-image: url(../assests/images/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-size: cover;
+    opacity: 50%;
+    border-radius: 10%;
+    text-align: center;
+    align-content: center;
+}
+.h{
+    background-image: url(../assests/images/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    background-size: cover;
+    opacity: 50%;
+   
+    text-align: center;
+    align-content: center;
+}
+.g,.j{
+    background-color:lightpink;
+   
+
+    
+}
+.o,.l{
+    background-color: lightgray;
+}
+.k,.p{
+    text-align: center;
+    align-content: center;
+}
+.n{
+    background-image:url(../assests/images/soundtrap-rAT6FJ6wltE-unsplash.jpg) ;
+    background-size: cover;
+    opacity: 50%;
+}
+
+
+
+/* Pricing Section */
+.pricing{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: auto;
+}
+@media screen and (max-width:559px ){
+    .pricing{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+}
+.price1{
+    border: black 2px dotted;
+    border-radius: 20px;
+    height:auto;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+.price1:hover{
+    height: auto;
+    width: auto;
+    border: #F44336 dotted 2px;
+
+}    
+.price2{
+    border: black 2px dotted;
+    border-radius: 20px;
+    height:auto;
+    width:auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+
+}
+.price2:hover{
+    height:auto;
+    width:auto;
+    border: #F44336 dotted 2px;
+
+}    
+
+.discount{
+    background-color: #F44336;
+    border-radius: 100%;
+    height:auto;
+    width:auto;
+    font-family:fantasy;
+    color: #f4f4f4;
+    font-size: x-large;
+    display: flex;
+    
+    align-items: center;
+
+}
+
+/* Contact Section */
+.contact {
+
+   text-align: center;
+   
+}
+.contmap{
+    height: 7vh;
+    border: #f4f4f4 1px solid;
+    background-color: antiquewhite;
+    width:200px ;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content:space-around;
+}
+.contmap:hover{
+    border: #FF6F00 2px solid;
+}
+.contf,.mapf{
+    border-radius: 40%;
+    color: #575655;
+    border: #f4f4f4 2px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contf:hover,.mapf:hover{
+    border: #FF6F00 2px solid;
+    background-color: #ababaa;
+    color: aliceblue;
+}
+.contact-form{
+    background-color:beige;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow :  -10px   0px   40px  20px #575655;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.btn-submit{
+    border: #f4f4f4 ;
+    background-color: #F44336;
+    height: 5vh;
+    width: 15vw;
+    color: #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.btn-submit:hover{
+    background-color: red;
+    
+}
+#fname,#email,#company,#mesg{
+    height: 7vh;
+    width: 70vw;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+
+    background-color: #333;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+   </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <p>Welcome to Music Festival 2023</p>
+        </div>
+        <nav>
+            <div class="logo">Festava Live</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artist">Artists</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="#pricing">  <button class="btn-buy-ticket">Buy Ticket</button></a>
+            </ul>
+            <!-- <a href="#pricing">  <button class="btn-buy-ticket">Buy Ticket</button></a>
+         -->
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="banner">
+        <h1>Night Live 2023</h1>
+        <p>Festava Live Presents</p>
+    
+        <button class="btn-learn-more" >Let's Begin....</button>
+        <p class="event-details">10 - 12th Dec 2023, National Center, United States</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div id="about" class="about-content">
+            <h2>About Festava 2022</h2>
+          
+            
+            <p>Festava Live is free CSS template provided by TemplateMo website. This layout is built on Bootstrap v5.2.2 CSS library. You are free to use this template for your commercial website.</p>
+            <h4>Once in Lifetime Experience</h4>
+            <p>You are not allowed to redistribute the template ZIP file on any other website without a permission </p>
+            <h4>Whole Night Party</h4>
+            <p>Please tell your friends about our website.Thank you. </p>
+            <p class="highlight"><i class="fas fa-smile"></i> a happy moment</p>
+        
+        
+            <img height="200vh" src="../assests/images/pexels-alexander-suhorucov-6457579 (1).jpg" >
+        </div>
+    </section>
+
+    <!-- Meet Artists -->
+    <section class="artists">
+        <h2 id="artist">Meet Artists</h2>
+        <div class="artist-gallery">
+            <div class="artist-card"><img src="../assests/images/abstral-official-bdlMO9z5yco-unsplash.jpg" alt="Artist 1"></div>
+            <div class="artist-card"><img src="../assests/images/joecalih-UmTZqmMvQcw-unsplash.jpg" alt="Artist 2"></div>
+            <div class="artist-card"><img src="../assests/images/soundtrap-rAT6FJ6wltE-unsplash.jpg" alt="Artist 3"></div>
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section id="schedule"  class="schedule">
+       
+        <div class="a">Date</div>
+        <div class="b">Wednesday</div>
+        <div class="c">Thursday</div>
+        <div class="d">Friday</div>
+        <div class="e">Day1</div>
+        <div class="f">Pop Night</div>
+        <div class="g"></div>
+        <div class="h">Rock&Roll</div>
+        <div class="i">Day2</div>
+        <div class="j"></div>
+        <div class="k">DJNight</div>
+        <div class="l"></div>
+        <div class="m">Day3</div>
+        <div class="n">Country Music</div>
+        <div class="o"></div>
+        <div class="p">Free Style</div>
+   
+    </section>
+
+    <!-- Pricing Section -->
+    <h1>PLAN YOUR LOVE</h1>
+    <div class="pricing" id="pricing">
+     
+        
+        <div class="price1">
+            <!-- <div class="discount" >Save 50%</div> -->
+            <h2>Earlybrid
+                $120</h2>
+        
+       
+        <ul>
+            <li>platform for potential customers</li>
+            <li>high-quality sound</li>
+            <li>digital experience</li>
+            <li>standard content</li>
+        </ul>
+       
+       </div>
+        <div class="price2"><h2>Standard $240</h2>
+            <ul>
+                <li>platform for potential customers</li>
+                <li>high-quality sound</li>
+                <li>digital experience</li>
+                <li>standard content</li>
+            </ul>
+        
+        </div>
+        
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Interested? Let's talk</h2>
+        <center>
+        <div class="contmap">
+            <button class="contf" >contact form</button>
+            <button class="mapf" >map<map name="map"></map></button>
+        </div>
+    </center>
+       <center>
+        <form action="#" class="contact-form">
+            <input type="text" id="fname" placeholder="Full Name">
+            <input type="email" id="email"  placeholder="Email Address">
+            <input type="text" id="company" placeholder="Company">
+            <textarea  id="mesg" placeholder="Message"></textarea>
+            <button  type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </center> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2023 Festava Live Company. All rights reserved.</p>
+        <div class="footer-links">
+            <a >Terms & Conditions</a><br>
+           <br> <a >Privacy Policy</a>
+            <a >Your Feedback</a>
+        </div>
+    </footer>
+
+</body>
+</html>
